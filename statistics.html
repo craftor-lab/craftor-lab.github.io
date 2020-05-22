@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Statistics Page || Covid-19info </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+
+    <!-- plugin scripts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CBarlow:300,400,500,600,700,800,900%7CPT+Sans:400,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vimns-icons.css">
+
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    <link rel="stylesheet" type="text/css" href="./custom.css">
+    <link rel="stylesheet" type="text/css" href="./charts.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="assets/images/loader.png" class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="site-header-one">
+                    <nav class="main-nav__one stricky">
+                        <div class="container-fluid">
+                            <div class="main-nav__logo-box">
+                                <a href="index.html">
+                                    <img width="137" src="assets/images/logo-1-1.png" alt="">
+                                </a>
+                                <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
+                            </div><!-- /.main-nav__logo-box -->
+                            <div class="main-nav__main-navigation">
+                                <ul class=" main-nav__navigation-box">
+                                    
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="statistics.html">Statistics</a>
+                                    </li>
+                                    <li>
+                                        <a href="prevention.html">Preventions</a>
+                                    </li>
+                                    <li>
+                                        <a href="faqs.html">FAQs</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="news.html">News</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.main-nav__main-navigation -->
+                            <div class="main-nav__cta">
+                                <div class="main-nav__cta-icon">
+                                    <i class="vimns-icon-phone"></i>
+                                </div><!-- /.main-nav__cta-icon -->
+                                <div class="main-nav__cta-content">
+                                    <h3><a href="tel:666-888-0000">666 888 0000</a></h3>
+                                    <p>Helpline</p>
+                                </div><!-- /.main-nav__cta-content -->
+                            </div><!-- /.main-nav__cta -->
+                            <div class="main-nav__right">
+                                <a href="prevention.html" class="main-nav__btn">Prevention</a><!-- /.main-nav__btn -->
+                            </div><!-- /.main-nav__right -->
+                        </div><!-- /.container-fluid -->
+                    </nav><!-- /.main-nav__one -->
+
+        </header><!-- /.site-header-one -->
+
+
+        <section class="page-header">
+            <div class="container">
+                <h2>Statistics</h2>
+                <ul class="thm-breadcrumb list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><span>Statistics</span></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        
+
+        <section class="funfact-two custom-position">
+            <div class="block-title text-center">
+                    <p>Virus in Kenya </p>
+                    <h3>Outcome</h3>
+            </div>
+            <img src="assets/images/shapes/virus-shape-1-3.png" class="funfact-two__virus" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-network"></i>
+                            <h3 class="counter" id="ke-new-confirmed"></h3>
+                            <p>New Confirmed Cases</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-grave"></i>
+                            <h3 class="counter" id="ke-new-deaths"></h3>
+                            <p>New Deaths</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-worldwide"></i>
+                            <h3 class="counter" id="ke-tot-confirmed"></h3>
+                            <p>Total Confirmed Cases</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-worldwide"></i>
+                            <h3 class="counter" id="ke-tot-deaths"></h3>
+                            <p>Total Deaths</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                     <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-worldwide"></i>
+                            <h3 class="counter" id="ke-tot-recovered"></h3>
+                            <p>Total Recovered</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-active-cases"></h3>
+                            <p>Active cases</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-critical-cases"></h3>
+                            <p>Critical Condition</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-total-tests"></h3>
+                            <p>Total Tests</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-tests-PerM"></h3>
+                            <p>Tests Per One Million</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-cases-perM"></h3>
+                            <p>Cases Per One Million</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-deaths-perM"></h3>
+                            <p>Deaths Per One Million</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                      <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-recovered-perM"></h3>
+                            <p>Recovered Per One Million</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+
+                      <div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInUp;">
+                        <div class="funfact-two__single">
+                            <i class="vimns-icon-family"></i>
+                            <h3 class="counter" id="ke-active-perM"></h3>
+                            <p>Active Per One Million</p>
+                        </div><!-- /.funfact-two__single -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+
+        <section class="ke-charts">
+            <div class="col-lg-6 ">
+                <h3 class="chart-headings">Cases chart</h3>
+                <div id="ke-cases-chart" class="ke-chart1"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-lg-6 ">
+                <h3 class="chart-headings">Deaths chart</h3>
+                <div id="ke-deaths-chart" class="ke-chart2"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-lg-6">
+                <h3 class="chart-headings">Recoveries Chart</h3>
+                <div id="ke-recoveries-chart" class="ke-chart1"></div>
+            </div>
+            
+        </section>
+
+
+
+
+        <section class="funfact-one">
+            <div class="block-title text-center fun-fact-font">
+                    <p>Virus in the World</p>
+                    <h3>Outcome</h3>
+            </div>
+            <div class="container">
+
+                <img src="assets/images/shapes/funfact-virus-1-1.png" class="funfact-one__virus-1" alt="">
+                <img src="assets/images/shapes/funfact-virus-1-2.png" class="funfact-one__virus-2" alt="">
+                <h3><span class="counter" id="g-tot-cases"></span></h3>
+                <p>People Infected by this Virus</p>
+            </div><!-- /.container -->
+            <div class="fact-positions">
+            <div class="about-one__fact global-facts " >
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-mask"></i>
+                                    </div><!-- /.about-one__fact-icon -->
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-tot-recovered"></h4>
+                                        <p>Total <br> Recovered</p>
+                                    </div><!-- /.about-one__fact-content -->
+                                </div>
+
+            <div class="about-one__fact global-facts ">
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-grave"></i>
+                                    </div><!-- /.about-one__fact-icon -->
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-tot-deaths"></h4>
+                                        <p>Total <br>Deaths </p>
+                                    </div><!-- /.about-one__fact-content -->
+                                </div>
+            <div class="about-one__fact global-facts">
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-worldwide"></i>
+                                    </div><!-- /.about-one__fact-icon -->
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-active-cases"></h4>
+                                        <p>Active <br> Cases</p>
+                                    </div><!-- /.about-one__fact-content -->
+                                </div>
+            <div class="about-one__fact global-facts world-stats-card" >
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-mask"></i>
+                                    </div><!-- /.about-one__fact-icon -->
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-new-confirmed"></h4>
+                                        <p>New <br> Confirmed</p>
+                                    </div><!-- /.about-one__fact-content -->
+                                </div>
+
+               <!--  <div class="about-one__fact global-facts world-stats-card" >
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-mask"></i>
+                                    </div><!-- /.about-one__fact-icon --
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-new-recovered">3822</h4>
+                                        <p>New  <br> Recoveries</p>
+                                    </div><!-- /.about-one__fact-content -
+                                </div> -->
+                <div class="about-one__fact global-facts world-stats-card" >
+                                    <div class="about-one__fact-icon">
+                                        <i class="vimns-icon-mask"></i>
+                                    </div><!-- /.about-one__fact-icon -->
+                                    <div class="about-one__fact-content">
+                                        <h4 class="counter" id="g-new-deaths"></h4>
+                                        <p>New <br> Deaths</p>
+                                    </div><!-- /.about-one__fact-content -->
+                                </div>
+        </div>
+        </section><!-- /.funfact-one -->        
+
+        <section class="map-one">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="row">
+                        <div class="col-lg-5 d-flex">
+                            <div class="my-auto">
+                                <div class="map-one__block">
+                                    <div class="block-title">
+                                        <p>Location by Numbers</p>
+                                        <h3>Virus Spread In Countries</h3>
+                                    </div><!-- /.block-title -->
+                                    <p>The map data shows active corona virus cases in each continent. Tap the orange map dots to view</p>
+                                </div><!-- /.map-one__block -->
+
+                            </div><!-- /.my-auto -->
+                        </div><!-- /.col-lg-5 -->
+                        <div class="col-lg-7">
+                            <div class="map-one__image">
+                                <img src="assets/images/shapes/map-1-1.png" alt="">
+                                <div class="map-one__dot-1">
+                                    <h5>North America <br> <span id="NA-cases">cases: </span> <br> <span id="NA-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-1 -->
+                                <div class="map-one__dot-2">
+                                    <h5>South America <br> <span id="SA-cases">cases: </span> <br> <span id="SA-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-2 -->
+                                <div class="map-one__dot-3">
+                                    <h5>Europe <br> <span id="Euro-cases">cases: </span> <br> <span id="Euro-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-3 -->
+                                <div class="map-one__dot-4">
+                                    <h5>Asia <br> <span id="Asia-cases">cases: </span> <br> <span id="Asia-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-4 -->
+                                <div class="map-one__dot-5">
+                                    <h5>Africa <br> <span id="Africa-cases">cases: </span> <br> <span id="Africa-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-5 -->
+
+                                <div class="map-one__dot-6">
+                                    <h5>Oceania <br> <span id="Oceania-cases">cases: </span> <br> <span id="Oceania-deaths">Deaths: </span></h5>
+                                </div><!-- /.map-one__dot-6 -->
+                            </div><!-- /.map-one__image -->
+                        </div><!-- /.col-lg-7 -->
+                    </div><!-- /.row -->
+
+                </div><!-- /.inner-container -->
+            </div><!-- /.container -->
+        </section><!-- /.map-one -->
+
+
+
+        <section class="progress-one">
+            <img src="assets/images/shapes/virus-shape-1-1.png" class="progress-one__virus" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress-one__block">
+                            <div class="block-title">
+                                <p>Location by Numbers</p>
+                                <h3>Coronavirus Casses Arround <br> the Globe</h3>
+                            </div><!-- /.block-title -->
+                            <p>The progress bars displays current cases accross the world <br> ranking top countries with the most reported cases,<br> deaths and recoveries </p>
+                        </div><!-- /.progress-one__block -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="progress-one__box-wrap">
+                            <div class="progress-one__box">
+                                <h3 id="con-1-name"></h3>
+                                <p class="counter" id="con-1-cases"></p>
+                                <span id="con-1-perc" class="wow slideInLeft" data-wow-animation-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-2-name"></h3>
+                                <p class="counter" id="con-2-cases"></p>
+                                <span id="con-2-perc"class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-3-name"></h3>
+                                <p class="counter" id="con-3-cases"></p>
+                                <span id="con-3-perc" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-4-name"></h3>
+                                <p class="counter" id="con-4-cases"></p>
+                                <span id="con-4-perc" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-5-name"></h3>
+                                <p class="counter" id="con-5-cases"></p>
+                                <span id="con-5-perc" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                        </div><!-- /.progress-one__box-wrap -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.progress-one -->
+
+
+        <section class="progress-one progress-container">
+        <div class="col-lg-5 progress-child">
+            <div><h2>Deaths</h2></div>
+                        <div class="progress-one__box-wrap">
+                            <div class="progress-one__box">
+                                <h3 id="con-1-name2"></h3>
+                                <p class="counter" id="con-1-deaths2"></p>
+                                <span id="con-1-perc2" class="wow slideInLeft" data-wow-animation-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-2-name2"></h3>
+                                <p class="counter" id="con-2-deaths2"></p>
+                                <span id="con-2-perc2"class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-3-name2"></h3>
+                                <p class="counter" id="con-3-deaths2"></p>
+                                <span id="con-3-perc2" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-4-name2"></h3>
+                                <p class="counter" id="con-4-deaths2"></p>
+                                <span id="con-4-perc2" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-5-name2"></h3>
+                                <p class="counter" id="con-5-deaths2"></p>
+                                <span id="con-5-perc2" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                        </div><!-- /.progress-one__box-wrap -->
+                    </div><!-- /.col-lg-6 -->
+        <div class="col-lg-5 progress-child">
+            <div><h2>Recoveries</h2></div>
+                <div class="progress-one__box-wrap">
+                            <div class="progress-one__box">
+                                <h3 id="con-1-name3"></h3>
+                                <p class="counter" id="con-1-recovered3"></p>
+                                <span id="con-1-perc3" class="wow slideInLeft" data-wow-animation-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-2-name3"></h3>
+                                <p class="counter" id="con-2-recovered3"></p>
+                                <span id="con-2-perc3"class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-3-name3"></h3>
+                                <p class="counter" id="con-3-recovered3"></p>
+                                <span id="con-3-perc3" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-4-name3"></h3>
+                                <p class="counter" id="con-4-recovered3"></p>
+                                <span id="con-4-perc3" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                            <div class="progress-one__box">
+                                <h3 id="con-5-name3"></h3>
+                                <p class="counter" id="con-5-recovered3"></p>
+                                <span id="con-5-perc3" class="wow slideInLeft" data-wow-duration="3000ms"></span>
+                            </div><!-- /.progress-one__box -->
+                        </div><!-- /.progress-one__box-wrap -->
+                        
+                    </div><!-- /.col-lg-6 -->
+        </section><!-- /.progress-one -->
+
+
+        
+   <footer class="site-footer-one site-footer-one__home-one">
+
+            <div class="site-footer-one__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-widget footer-widget__about">
+                                <a href="index.html" class="footer-widget__logo">
+                                    <img width="137" src="assets/images/logo-1-1.png" alt="">
+                                </a>
+                                <p>Covid-19info is a website specifically designed to for the Covid-19 paendamic. It is an information center
+                                itself containing all you need to know about the virus.</p>
+                            </div><!-- /.footer-widget footer-widget__about -->
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-3">
+                            <div class="footer-widget footer-widget__links">
+                                <h3 class="footer-widget__title">Explore</h3><!-- /.footer-widget__title -->
+                                <div class="footer-widget__links-wrap">
+                                    <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="statistics.html">Statistivs</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="prevention.html">Prevention</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                    <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <!-- <li><a href="about.html">Privacy Policy</a></li>
+                                        <li><a href="about.html">Terms of Use</a></li> -->
+                                    </ul><!-- /.list-unstyled -->
+                                </div><!-- /.footer-widget__links-wrap -->
+
+                            </div><!-- /.footer-widget footer-widget__about -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-3">
+                            <div class="footer-widget footer-widget__contact">
+                                <h3 class="footer-widget__title">Contact</h3><!-- /.footer-widget__title -->
+                                <p><a href="tel:+254703818311">+254703818311</a></p>
+                                <p><a href="mailto:info@covid19info.xyz">info@covid-19info.xyz</a> </p>
+                                <p>1322, Nairobi <br> Kenya</p>
+                            </div><!-- /.footer-widget footer-widget__contact -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-2 d-flex">
+                            <div class="footer-widget my-auto">
+                                <div class="footer-widget__social">
+                                    <a href="#" class="fab fa-facebook-square"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                    <a href="#" class="fab fa-pinterest-p"></a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-2 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer-one__upper -->
+            <div class="site-footer-one__bottom">
+                <div class="container">
+                    <p>© copyright 2020 by <a href="#">Covid-19 info</a></p>
+                </div><!-- /.container -->
+            </div><!-- /.site-footer-one__bottom -->
+        </footer><!-- /.site-footer-one -->
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+
+
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+
+                <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="assets/images/shapes/close-1-1.png" alt=""></a>
+            </div><!-- /.side-menu__top -->
+
+
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                <p> Covid-19info is a website specifically designed to for the Covid-19 paendamic. It is an information center
+                                itself containing all you need to know about the virus.</p>
+                <p><a href="mailto: info@covid-19info.xyz">info@covid-19info.xyz</a> <br> <a href="tel:+254703818311">+254703818311</a></p>
+                <div class="side-menu__social">
+                    <a class="fab fa-facebook-f" href="#"></a>
+                    <a class="fab fa-twitter" href="#"></a>
+                    <a class="fab fa-instagram" href="#"></a>
+                    <a class="fab fa-pinterest-p" href="#"></a>
+                </div>
+            </div><!-- /.side-menu__content -->
+        </div><!-- /.side-menu__block-inner -->
+    </div><!-- /.side-menu__block -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script.js"></script>
+    <script src="./charts.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    
+
+    <!-- template scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/testimonials-owl.carousel.config.js"></script>
+</body>
+
+</html>

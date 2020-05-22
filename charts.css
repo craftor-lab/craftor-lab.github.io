@@ -1,0 +1,44 @@
+.ke-charts{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ke-chart1{
+	margin: 15px auto;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border: 0px solid #000000;
+
+	-webkit-box-shadow: 8px 8px 14px -2px rgba(21,163,223,1);
+	-moz-box-shadow: 8px 8px 14px -2px rgba(21,163,223,1);
+	box-shadow: 8px 8px 14px -2px rgba(21,163,223,1);
+	}
+
+.ke-chart2{
+	margin: 15px auto;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border: 0px solid #000000;
+
+	-webkit-box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);
+	-moz-box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);
+	box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);
+}
+.chart-headings{
+	text-align: center;
+}
+
+
+	/* ORANGE
+	-webkit-box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);
+	-moz-box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);
+	box-shadow: 8px 8px 14px -2px rgba(254,191,65,1);*/
+
+	/*#febf41*/
+
+/*bluish	#15a3df000000*/
+
+ 

@@ -1,0 +1,52 @@
+.fact-positions{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+.global-facts{
+	margin: 10px;
+}
+
+.tweets-container{
+	margin-top: 45px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tweet{
+	margin: 20px;
+	border-top: 15px solid #0a1c4f;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	max-height: 550px;
+}
+
+.world-stats-card{
+	background-image: linear-gradient(-90deg, #23e7ea 0%, #0a6ad6 100%);
+}
+
+.fun-fact-font  p{
+	margin: 0;
+    color: rgb(12, 117, 216);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1em;
+}
+
+.fun-fact-font h3{
+	font-size: 60px;
+}
+
+.progress-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.progress-child{
+	margin: 20px;
+}
